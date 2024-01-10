@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Form</title>
+</head>
+<body>
+    <h1>Загрузка исходного файла</h1>
+    <form action="/upload/" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel">
+        <button type="submit">Загрузить</button>
+    </form>
+</body>
+</html>
