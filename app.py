@@ -39,6 +39,7 @@ async def upload_file(file: UploadFile = File(...)):
         df = df.rename(columns={'баркод товара': 'Barcode'})
         df = df.rename(columns={'barcode': 'Barcode'})
         df = df.rename(columns={'баркод': 'Barcode'})
+        df = df.rename(columns={'Последний баркод': 'Barcode'})
 
         # Объединяем DataFrames
         df_merged = pd.merge(df, replacement_df, on='Barcode', how='left')
