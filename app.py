@@ -32,7 +32,7 @@ async def upload_file(file: UploadFile = File(...)):
 
         # Загружаем словарь
         replacement_df = pd.read_excel('dict.xlsx')
-        replacement_df['Артикул'] = replacement_df['Артикул'].str.slice(1)
+        print(replacement_df)
 
         # Переименовываем столбец
         df = df.rename(columns={'Баркод': 'Barcode'})
